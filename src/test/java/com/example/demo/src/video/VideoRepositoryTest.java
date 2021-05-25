@@ -28,21 +28,21 @@ class VideoRepositoryTest {
     @Autowired
     UserRepository userRepository;
 
-    @Test
-    public void title로page가져오기() {
-
-        PageRequest pageRequest = PageRequest.of(0, 3);
-
-
-        Page<Video> page = videoRepository.findByTitle("title1", pageRequest);
-
-        List<Video> content = page.getContent();
-
-        for (Video video : content) {
-            System.out.println("video : " + video.getTitle());
-        }
-
-    }
+//    @Test
+//    public void title로page가져오기() {
+//
+//        PageRequest pageRequest = PageRequest.of(0, 3);
+//
+//
+//        Page<Video> page = videoRepository.findByTitle("title1", pageRequest);
+//
+//        List<Video> content = page.getContent();
+//
+//        for (Video video : content) {
+//            System.out.println("video : " + video.getTitle());
+//        }
+//
+//    }
 /*
     @Test
     public void duration으로_page가져오기() {

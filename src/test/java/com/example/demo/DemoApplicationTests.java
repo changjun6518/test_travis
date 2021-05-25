@@ -14,16 +14,16 @@ import javax.persistence.PersistenceContext;
 @Rollback(value = false)
 class DemoApplicationTests {
 
-    @PersistenceContext
-    EntityManager em;
-
-    @Test
-    void contextLoads() {
-
-        User userA = new User();
-        userA.setEmail("aowert@naver.com");
-
-        em.persist(userA);
-    }
+//    @PersistenceContext
+//    EntityManager em;
+//
+//    @Test
+//    void contextLoads() {
+//
+//        User userA = new User();
+//        userA.setEmail("aowert@naver.com");
+//
+//        em.persist(userA);
+//    }
 
 }
